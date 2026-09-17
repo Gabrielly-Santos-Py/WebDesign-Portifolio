@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Agência Criativa - Burger Mania</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+            color: #222;
+        }
+
+        header {
+            background: #111;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #ffb703;
+            margin-bottom: 8px;
+        }
+
+        nav {
+            background: #222;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffb703;
+        }
+
+        .hero {
+            padding: 60px 20px;
+            text-align: center;
+            background: linear-gradient(135deg, #ffb703, #fb8500);
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        section h2 {
+            color: #fb8500;
+            margin-bottom: 20px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #fafafa;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 5px solid #ffb703;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        ul {
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+
+        .estrategia {
+            background: #fff3cd;
+            border-left: 6px solid #ffb703;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
+        .erro {
+            background: #ffe5e5;
+            border-left: 6px solid #d00000;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+
+        button {
+            background: #fb8500;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background: #d96f00;
+        }
+
+        #resultado {
+            margin-top: 20px;
+            padding: 20px;
+            background: #e8f5e9;
+            border-radius: 10px;
+            display: none;
+        }
+
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        footer span {
+            color: #ffb703;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🔥 Agência Criativa</h1>
+        <p>Agência de Propaganda e Marketing - Projeto Fictício</p>
+    </header>
+
+    <nav>
+        <a href="#cliente">Cliente</a>
+        <a href="#perguntas">Perguntas</a>
+        <a href="#decisoes">Decisões</a>
+        <a href="#erros">Possíveis Erros</a>
+        <a href="#estrategia">Estratégia</a>
+    </nav>
+
+    <div class="hero">
+        <h2>Projeto: Burger Mania 🍔</h2>
+        <p>
+            Uma estratégia de marketing criada utilizando
+            Pensamento Computacional.
+        </p>
+    </div>
+
+    <section id="cliente">
+        <h2>👤 1. Conhecendo o Cliente</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Nome</h3>
+                <p>Burger Mania</p>
+            </div>
+
+            <div class="card">
+                <h3>Segmento</h3>
+                <p>Hamburgueria</p>
+            </div>
+
+            <div class="card">
+                <h3>Público-alvo</h3>
+                <p>Jovens e adultos que gostam de hambúrguer artesanal.</p>
+            </div>
+
+            <div class="card">
+                <h3>Objetivo</h3>
+                <p>Aumentar as vendas e conquistar novos clientes.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="perguntas">
+        <h2>❓ 2. Perguntas para o Cliente</h2>
+
+        <p>
+            Para compreender as necessidades da hamburgueria,
+            nossa agência faria as seguintes perguntas:
+        </p>
+
+        <br>
+
+        <ul>
+            <li>Qual é o principal produto vendido?</li>
+            <li>Quem são os principais clientes?</li>
+            <li>Quais produtos possuem maior saída?</li>
+            <li>A hamburgueria possui Instagram?</li>
+            <li>Existe atendimento pelo WhatsApp?</li>
+            <li>É possível fazer pedidos online?</li>
+            <li>A empresa trabalha com delivery?</li>
+            <li>Existe algum programa de fidelidade?</li>
+            <li>Qual é o orçamento disponível para propaganda?</li>
+            <li>Qual é o principal objetivo da campanha?</li>
+        </ul>
+    </section>
+
+    <section id="decisoes">
+        <h2>💡 3. Decisões do Projeto</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>📱 Instagram</h3>
+                <p>
+                    Criar posts e vídeos mostrando os hambúrgueres,
+                    promoções e novidades.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>💬 WhatsApp</h3>
+                <p>
+                    Utilizar o WhatsApp para receber pedidos
+                    e tirar dúvidas dos clientes.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🛵 Delivery</h3>
+                <p>
+                    Disponibilizar entrega por aplicativos
+                    e pelo próprio WhatsApp.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🌐 Site</h3>
+                <p>
+                    Criar um site com cardápio, preços,
+                    localização e contato.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="erros">
+        <h2>⚠️ 4. Identificação de Possíveis Erros</h2>
+
+        <div class="erro">
+            <strong>Erro 1:</strong>
+            Cliente pedir um produto que está em falta.
+        </div>
+
+        <div class="erro">
+            <strong>Erro 2:</strong>
+            Pedido chegar com informações incorretas.
+        </div>
+
+        <div class="erro">
+            <strong>Erro 3:</strong>
+            Promoção divulgada com preço errado.
+        </div>
+
+        <div class="erro">
+            <strong>Erro 4:</strong>
+            Atraso na entrega do pedido.
+        </div>
+
+        <div class="erro">
+            <strong>Erro 5:</strong>
+            Publicação nas redes sociais sem informações importantes.
+        </div>
+    </section>
+
+    <section id="estrategia">
+        <h2>🧠 5. Pensamento Computacional</h2>
+
+        <div class="estrategia">
+
+            <h3>🔹 Decomposição</h3>
+            <p>
+                Dividir o problema em partes menores:
+                divulgação, atendimento, pedidos, delivery
+                e fidelização.
+            </p>
+
+            <br>
+
+            <h3>🔹 Reconhecimento de Padrões</h3>
+            <p>
+                Identificar quais produtos vendem mais,
+                quais horários possuem mais pedidos e
+                quais publicações recebem mais interações.
+            </p>
+
+            <br>
+
+            <h3>🔹 Abstração</h3>
+            <p>
+                Selecionar apenas as informações mais importantes
+                para criar uma campanha eficiente.
+            </p>
+
+            <br>
+
+            <h3>🔹 Algoritmo</h3>
+            <p>
+                Criar uma sequência de ações para atender
+                o cliente e realizar o pedido.
+            </p>
+
+        </div>
+
+        <button onclick="mostrarAlgoritmo()">
+            Ver algoritmo de atendimento
+        </button>
+
+        <div id="resultado"></div>
+    </section>
+
+    <section>
+        <h2>📢 6. Campanha de Marketing</h2>
+
+        <div class="card">
+
+            <h3>Campanha: "Sextou do Burger Mania!"</h3>
+
+            <br>
+
+            <p>
+                Toda sexta-feira, os clientes terão uma promoção
+                especial nos hambúrgueres artesanais.
+            </p>
+
+            <br>
+
+            <p>
+                <strong>Divulgação:</strong> Instagram, WhatsApp
+                e site.
+            </p>
+
+            <br>
+
+            <p>
+                <strong>Objetivo:</strong> aumentar o movimento
+                nas sextas-feiras e conquistar novos clientes.
+            </p>
+
+        </div>
+    </section>
+
+    <section>
+        <h2>📊 7. Resultado Esperado</h2>
+
+        <ul>
+            <li>Aumentar o número de pedidos.</li>
+            <li>Conquistar novos clientes.</li>
+            <li>Aumentar a presença da empresa nas redes sociais.</li>
+            <li>Melhorar o atendimento.</li>
+            <li>Divulgar melhor as promoções.</li>
+            <li>Criar maior fidelização dos clientes.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>
+            Projeto desenvolvido pela <span>Agência Criativa</span>
+        </p>
+
+        <p>
+            Atividade de Pensamento Computacional
+        </p>
+    </footer>
+
+
+    <script>
+
+        function mostrarAlgoritmo() {
+
+            const resultado = document.getElementById("resultado");
+
+            resultado.style.display = "block";
+
+            resultado.innerHTML = `
+                <h3>📋 Algoritmo de Atendimento</h3>
+                <br>
+
+                <p><strong>1.</strong> Cliente realiza o pedido.</p>
+                <p><strong>2.</strong> Sistema verifica se o produto está disponível.</p>
+                <p><strong>3.</strong> Se estiver disponível, o pedido é confirmado.</p>
+                <p><strong>4.</strong> Se estiver indisponível, o cliente recebe uma mensagem.</p>
+                <p><strong>5.</strong> A hamburgueria prepara o pedido.</p>
+                <p><strong>6.</strong> O pedido é enviado para entrega.</p>
+                <p><strong>7.</strong> Cliente recebe o pedido.</p>
+
+                <br>
+
+                <strong>Fim do processo! 🍔</strong>
+            `;
+        }
+
+    </script>
+
+</body>
+</html>
